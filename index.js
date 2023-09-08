@@ -36,6 +36,18 @@ const addCircle = (event) => {
     event.target.appendChild(circleCopy);
 }
 
+const moveAi = () => {
+    const emptyCells = [];
+    for(let i=0; i<board.length; i++){
+        if(board[i] === ''){
+            emptyCells.push(i);
+        }
+    }
+    const emptyCellIndex = emptyCells[Math.floor(Math.random() * emptyCells.length)];
+    const cellTarget = document.getElementById(`cell-${emptyCellIndex + 1}`);
+    addCircle({target: cellTarget});
+}
+
 const checkWinner = () => {
     winConditions.forEach(winCondition => {
         if(board[winCondition[0]] === board[winCondition[1]] && board[winCondition[1]] === board[winCondition[2]] && board[winCondition[0]] !== ''){
@@ -71,12 +83,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if(event.target.classList.contains('cell') && event.target.querySelector('img') === null){
             if(currentPlayer === 'X'){
                 addCross(event);
-            } else {
-                addCircle(event);
             }
             checkWinner();
             if (winnerStatus === '') {
-                currentPlayer = (currentPlayer === 'X') ? 'O' : 'X';
+                currentPlayer = 'O';
+                moveAi();
+                checkWinner();
+                currentPlayer = 'X';
             }
         }
     });
