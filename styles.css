@@ -58,39 +58,39 @@ main {
     height: 100%;
 }
 
-.grid-container #box-1 {
+.grid-container #cell-1 {
     border-right: 3px solid black;
     border-bottom: 3px solid black;
 }
 
-.grid-container #box-2 {
+.grid-container #cell-2 {
     border-right: 3px solid black;
     border-bottom: 3px solid black;
 }
 
-.grid-container #box-3 {
+.grid-container #cell-3 {
     border-bottom: 3px solid black;
 }
 
-.grid-container #box-4 {
+.grid-container #cell-4 {
     border-right: 3px solid black;
     border-bottom: 3px solid black;
 }
 
-.grid-container #box-5 {
+.grid-container #cell-5 {
     border-right: 3px solid black;
     border-bottom: 3px solid black;
 }
 
-.grid-container #box-6 {
+.grid-container #cell-6 {
     border-bottom: 3px solid black;
 }
 
-.grid-container #box-7 {
+.grid-container #cell-7 {
     border-right: 3px solid black;
 }
 
-.grid-container #box-8 {
+.grid-container #cell-8 {
     border-right: 3px solid black;
 }
 
