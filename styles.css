@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+:root {
+    font-family: 'Acme', 'sans-serif';
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 0 5px black;
+    padding: 10px 0;
+    background-color: white;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+}
+
+header p {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+main {
+    padding: 30px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.grid-container div {
+    padding: 20px;
+    overflow: hidden;
+}
+
+.grid-container div:hover {
+    cursor: pointer;
+}
+
+.grid-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.grid-container #box-1 {
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.grid-container #box-2 {
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.grid-container #box-3 {
+    border-bottom: 3px solid black;
+}
+
+.grid-container #box-4 {
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.grid-container #box-5 {
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.grid-container #box-6 {
+    border-bottom: 3px solid black;
+}
+
+.grid-container #box-7 {
+    border-right: 3px solid black;
+}
+
+.grid-container #box-8 {
+    border-right: 3px solid black;
+}
+
+.reset-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#reset {
+    font-family: 'Acme', 'sans-serif';
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
