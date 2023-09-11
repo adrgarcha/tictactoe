@@ -60,12 +60,11 @@ const randomMove = () => {
 
 const minimaxAlg = (board, depth, isMaximizing) => {
     const scores = {
-        'X': 10,
-        'O': -10,
+        'X': -10,
+        'O': 10,
         'TIE': 0
     }
     const winnerStatus = checkWinner();
-    console.log(winnerStatus);
     if(winnerStatus !== ''){
         return scores[winnerStatus];
     }
